@@ -75,7 +75,6 @@
     </div>
 </section>
 
-<!-- Quote Form Section -->
 <section class="py-20 bg-[#1b9645]">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="bg-white rounded-2xl shadow-xl p-10">
@@ -84,54 +83,89 @@
                 Get Started Today
             </h2>
 
-            <!-- NETLIFY FORM START -->
-            <form name="quote-request" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="space-y-6">
+            <form
+                name="quote-request"
+                method="POST"
+                data-netlify="true"
+                netlify-honeypot="bot-field"
+                action="/thankyou.html"
+                enctype="multipart/form-data"
+                class="space-y-6"
+            >
 
-                <!-- Required hidden input -->
-                <input type="hidden" name="form-name" value="quote-request">
+                <!-- REQUIRED for Netlify -->
+                <input type="hidden" name="form-name" value="quote-request" />
 
                 <!-- Honeypot -->
                 <p class="hidden">
-                    <label>Don’t fill this out if you're human: <input name="bot-field"></label>
+                    <label>
+                        Don’t fill this out:
+                        <input name="bot-field" />
+                    </label>
                 </p>
 
                 <div class="grid md:grid-cols-2 gap-6">
-                    <input type="text" name="full-name" placeholder="Full Name *" required
-                        class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[#25934e] focus:ring-2 focus:ring-[#25934e]/20 outline-none">
+                    <input
+                        type="text"
+                        name="name"
+                        placeholder="Full Name *"
+                        required
+                        class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#25934e]"
+                    />
 
-                    <input type="tel" name="phone" placeholder="Phone Number *" required
-                        class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[#25934e] focus:ring-2 focus:ring-[#25934e]/20 outline-none">
+                    <input
+                        type="tel"
+                        name="phone"
+                        placeholder="Phone Number *"
+                        required
+                        class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#25934e]"
+                    />
                 </div>
 
                 <div class="grid md:grid-cols-2 gap-6">
-                    <input type="email" name="email" placeholder="Email Address *" required
-                        class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[#25934e] focus:ring-2 focus:ring-[#25934e]/20 outline-none">
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="Email Address *"
+                        required
+                        class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#25934e]"
+                    />
 
-                    <input type="text" name="address" placeholder="Service Address *" required
-                        class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[#25934e] focus:ring-2 focus:ring-[#25934e]/20 outline-none">
+                    <input
+                        type="text"
+                        name="address"
+                        placeholder="Service Address *"
+                        required
+                        class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#25934e]"
+                    />
                 </div>
 
-                <select name="service" required
-                    class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[#25934e] focus:ring-2 focus:ring-[#25934e]/20 outline-none bg-white">
-                    <option disabled selected value="">Select a service...</option>
+                <select
+                    name="service"
+                    required
+                    class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#25934e] bg-white"
+                >
+                    <option value="" disabled selected>Select a service</option>
                     <option value="Lawn Mowing">Lawn Mowing</option>
                     <option value="Seasonal Cleanup">Seasonal Cleanup</option>
                     <option value="Both Services">Both Services</option>
                 </select>
 
-                <textarea rows="4" name="details" placeholder="Additional details..."
-                    class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[#25934e] focus:ring-2 focus:ring-[#25934e]/20 outline-none resize-none"></textarea>
+                <textarea
+                    rows="4"
+                    name="details"
+                    placeholder="Additional details..."
+                    class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#25934e] resize-none"
+                ></textarea>
 
-                <div class="pt-6 text-center">
-                    <button type="submit"
-                        class="bg-[#f4b73f] text-black px-10 py-4 rounded-full font-bold text-lg 
-                        hover:bg-[#1b9645] transition-all duration-300 shadow-2xl">
-                        Submit Request
-                    </button>
-                </div>
+                <button
+                    type="submit"
+                    class="w-full bg-[#f4b73f] hover:bg-[#1b9645] text-black font-bold py-4 px-8 rounded-full shadow-lg transition"
+                >
+                    Send Request
+                </button>
 
             </form>
-            <!-- NETLIFY FORM END -->
 
         </div>
     </div>
