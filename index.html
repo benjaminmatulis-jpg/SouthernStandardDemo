@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Southern Standard | Professional Lawn Care & Seasonal Cleanups</title>
+    <meta name="description" content="Precision lawn mowing and seasonal cleanups delivered with reliability and professional standards. Setting the standard in residential lawn care.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-sans antialiased bg-white">
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-[#1b9645] shadow-lg transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="text-white font-serif text-2xl font-bold tracking-tight">
+                        The Southern Standard
+                    </a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-white hover:text-[#f4b73f] transition-colors duration-200 font-medium">Home</a>
+                    <a href="about.html" class="text-white hover:text-[#f4b73f] transition-colors duration-200 font-medium">About</a>
+                    <a href="services.html" class="text-white hover:text-[#f4b73f] transition-colors duration-200 font-medium">Services</a>
+                    <a href="testimonials.html" class="text-white hover:text-[#f4b73f] transition-colors duration-200 font-medium">Testimonials</a>
+                    <a href="quote.html" class="bg-[#f4b73f] text-[#1b9645] px-6 py-2.5 rounded-full font-semibold hover:bg-white hover:text-[#1b9645] transition-all duration-300 shadow-md">
+                        Free Quote
+                    </a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-white hover:text-[#f4b73f] focus:outline-none">
+                        <i data-lucide="menu" class="h-6 w-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-[#1b9645] border-t border-[#f4b73f]/20">
+            <div class="px-4 pt-2 pb-6 space-y-2">
+                <a href="index.html" class="block px-3 py-2 text-white hover:text-[#f4b73f] font-medium">Home</a>
+                <a href="about.html" class="block px-3 py-2 text-white hover:text-[#f4b73f] font-medium">About</a>
+                <a href="services.html" class="block px-3 py-2 text-white hover:text-[#f4b73f] font-medium">Services</a>
+                <a href="testimonials.html" class="block px-3 py-2 text-white hover:text-[#f4b73f] font-medium">Testimonials</a>
+                <a href="quote.html" class="block px-3 py-2 text-[#1b9645] bg-[#f4b73f] rounded-lg font-semibold mt-4 text-center">Free Quote</a>
+            </div>
+        </div>
+    </nav>
+
+<!-- Hero Section -->
+<section class="relative bg-[#1b9645] overflow-hidden">
+    
+    <!-- Background Image -->
+    <div class="absolute inset-0">
+        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1547099036-b43cd570bdae?q=80&w=1724&auto=format&fit=crop')] bg-cover bg-center"></div>
+        <div class="absolute inset-0 bg-black/40"></div>
+    </div>
+
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32 lg:py-40 flex justify-center">
+        
+        <!-- Glass Container -->
+        <div class="bg-black/60 backdrop-blur-md p-8 md:p-10 rounded-2xl shadow-xl max-w-3xl mb-10 text-center">
+            
+            <h1 class="font-serif text-4xl md:text-5xl lg:text-6xl text-white font-bold leading-tight mb-6">
+                Setting the Standard in Lawn Care
+            </h1>
+
+            <p class="text-xl md:text-2xl text-white/90 mb-10 font-light">
+                Reliable lawn mowing and seasonal cleanups delivered with precision and consistency.
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="quote.html" class="bg-[#f4b73f] text-[#1b9645] px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-[#1b9645] transition-all duration-300 shadow-lg transform hover:-translate-y-1">
+                    Get a Free Quote
+                </a>
+
+                <a href="services.html" class="bg-[#f4b73f] text-[#1b9645] px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-[#1b9645] transition-all duration-300 shadow-lg transform hover:-translate-y-1">
+                    View Services
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+<!-- Services Preview -->
+<section class="py-16 md:py-20 bg-[#f4b73f]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section Heading -->
+        <div class="text-center mb-14">
+            <h2 class="font-serif text-3xl md:text-4xl text-[#1b9645] font-bold mb-4">
+                Professional Services
+            </h2>
+            <div class="w-24 h-1 bg-[#1b9645] mx-auto rounded-full"></div>
+        </div>
+        
+        <!-- Services Grid -->
+        <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            
+            <!-- Lawn Mowing Card -->
+            <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 p-8 border border-gray-100">
+                <div class="w-14 h-14 bg-[#f4b73f]/20 rounded-full flex items-center justify-center mb-6">
+                    <i data-lucide="scissors" class="w-7 h-7 text-[#1b9645]"></i>
+                </div>
+
+                <h3 class="font-serif text-2xl text-[#1b9645] font-bold mb-4">
+                    Lawn Mowing
+                </h3>
+
+                <ul class="space-y-3 text-gray-600 mb-6">
+                    <li class="flex items-start">
+                        <i data-lucide="check" class="w-5 h-5 text-[#f4b73f] mr-2 flex-shrink-0 mt-0.5"></i>
+                        <span>Precision cuts for a manicured finish</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i data-lucide="check" class="w-5 h-5 text-[#f4b73f] mr-2 flex-shrink-0 mt-0.5"></i>
+                        <span>Clean edging along driveways and walkways</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i data-lucide="check" class="w-5 h-5 text-[#f4b73f] mr-2 flex-shrink-0 mt-0.5"></i>
+                        <span>Reliable scheduling you can count on</span>
+                    </li>
+                </ul>
+
+                <a href="services.html" class="inline-flex items-center text-[#1b9645] font-semibold hover:text-[#15803d] transition-colors">
+                    Learn More
+                    <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+                </a>
+            </div>
+
+            <!-- Seasonal Cleanups Card -->
+            <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 p-8 border border-gray-100">
+                <div class="w-14 h-14 bg-[#f4b73f]/20 rounded-full flex items-center justify-center mb-6">
+                    <i data-lucide="leaf" class="w-7 h-7 text-[#1b9645]"></i>
+                </div>
+
+                <h3 class="font-serif text-2xl text-[#1b9645] font-bold mb-4">
+                    Seasonal Cleanups
+                </h3>
+
+                <ul class="space-y-3 text-gray-600 mb-6">
+                    <li class="flex items-start">
+                        <i data-lucide="check" class="w-5 h-5 text-[#f4b73f] mr-2 flex-shrink-0 mt-0.5"></i>
+                        <span>Spring refresh and preparation</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i data-lucide="check" class="w-5 h-5 text-[#f4b73f] mr-2 flex-shrink-0 mt-0.5"></i>
+                        <span>Fall leaf removal and clearing</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i data-lucide="check" class="w-5 h-5 text-[#f4b73f] mr-2 flex-shrink-0 mt-0.5"></i>
+                        <span>Complete debris removal</span>
+                    </li>
+                </ul>
+
+                <a href="services.html" class="inline-flex items-center text-[#1b9645] font-semibold hover:text-[#15803d] transition-colors">
+                    Learn More
+                    <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Why Choose Us -->
+<section class="py-20 md:py-24 bg-[#25934e]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- Section Heading -->
+        <div class="text-center mb-16">
+            <h2 class="font-serif text-3xl md:text-4xl text-white font-bold mb-4">
+                Why Choose Us
+            </h2>
+            <div class="w-24 h-1 bg-[#f4b73f] mx-auto rounded-full"></div>
+        </div>
+
+        <!-- Grid -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+            <!-- Card 1 -->
+            <div
+                class="bg-white rounded-2xl p-8 text-center shadow-xl hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border-t-4 border-[#f4b73f]">
+                <div class="w-16 h-16 bg-[#f4b73f]/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <i data-lucide="clock" class="w-8 h-8 text-[#25934e]"></i>
+                </div>
+                <h3 class="font-serif text-xl text-[#25934e] font-bold mb-3">
+                    Reliable & On Time
+                </h3>
+                <p class="text-gray-600">
+                    Consistent scheduling that respects your time and routine.
+                </p>
+            </div>
+
+            <!-- Card 2 -->
+            <div
+                class="bg-white rounded-2xl p-8 text-center shadow-xl hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border-t-4 border-[#f4b73f]">
+                <div class="w-16 h-16 bg-[#f4b73f]/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <i data-lucide="message-circle" class="w-8 h-8 text-[#25934e]"></i>
+                </div>
+                <h3 class="font-serif text-xl text-[#25934e] font-bold mb-3">
+                    Professional Communication
+                </h3>
+                <p class="text-gray-600">
+                    Clear updates and responsive service when you need it.
+                </p>
+            </div>
+
+            <!-- Card 3 -->
+            <div
+                class="bg-white rounded-2xl p-8 text-center shadow-xl hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border-t-4 border-[#f4b73f]">
+                <div class="w-16 h-16 bg-[#f4b73f]/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <i data-lucide="eye" class="w-8 h-8 text-[#25934e]"></i>
+                </div>
+                <h3 class="font-serif text-xl text-[#25934e] font-bold mb-3">
+                    Attention to Detail
+                </h3>
+                <p class="text-gray-600">
+                    Every edge, every corner, finished with precision care.
+                </p>
+            </div>
+
+            <!-- Card 4 -->
+            <div
+                class="bg-white rounded-2xl p-8 text-center shadow-xl hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border-t-4 border-[#f4b73f]">
+                <div class="w-16 h-16 bg-[#f4b73f]/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <i data-lucide="home" class="w-8 h-8 text-[#25934e]"></i>
+                </div>
+                <h3 class="font-serif text-xl text-[#25934e] font-bold mb-3">
+                    Locally Committed
+                </h3>
+                <p class="text-gray-600">
+                    Dedicated to our community and your neighborhood.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="py-20 md:py-28 bg-[#f4b73f] relative overflow-hidden">
+
+    <!-- Subtle Pattern Overlay -->
+    <div class="absolute inset-0 opacity-5">
+        <div class="absolute inset-0 bg-[url('http://static.photos/gradient/1200x630/15')] bg-cover bg-center"></div>
+    </div>
+
+    <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+
+        <h2 class="font-serif text-3xl md:text-4xl lg:text-5xl text-[#25934e] font-bold mb-6 leading-tight">
+            Ready for Your Lawn to Meet the Standard?
+        </h2>
+
+        <p class="text-xl text-[#25934e]/90 mb-10 max-w-2xl mx-auto">
+            Join homeowners who trust The Southern Standard for precision lawn care and reliable seasonal cleanups.
+        </p>
+
+        <a href="quote.html" class="inline-block bg-[#25934e] text-white px-10 py-4 rounded-full font-bold text-lg 
+                  hover:bg-[#1b9645] transition-all duration-300 shadow-2xl 
+                  transform hover:-translate-y-1 hover:scale-105">
+            Request Your Free Quote
+        </a>
+
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="bg-[#1b9645] text-white py-12 border-t-4 border-[#f4b73f]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h3 class="font-serif text-2xl font-bold mb-4">The Southern Standard</h3>
+                    <p class="text-white/80 mb-4">Precision Lawn Care. Done Right.</p>
+                    <p class="text-white/60 text-sm">Professional lawn mowing and seasonal cleanups delivered with reliability you can count on.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-[#f4b73f] mb-4 uppercase tracking-wider text-sm">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-[#f4b73f] transition-colors">Home</a></li>
+                        <li><a href="about.html" class="hover:text-[#f4b73f] transition-colors">About</a></li>
+                        <li><a href="services.html" class="hover:text-[#f4b73f] transition-colors">Services</a></li>
+                        <li><a href="testimonials.html" class="hover:text-[#f4b73f] transition-colors">Testimonials</a></li>
+                        <li><a href="quote.html" class="hover:text-[#f4b73f] transition-colors">Free Quote</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-[#f4b73f] mb-4 uppercase tracking-wider text-sm">Contact</h4>
+                    <ul class="space-y-2 text-white/80">
+                        <li class="flex items-center"><i data-lucide="phone" class="w-4 h-4 mr-2 text-[#f4b73f]"></i> (555) 123-4567</li>
+                        <li class="flex items-center"><i data-lucide="mail" class="w-4 h-4 mr-2 text-[#f4b73f]"></i> info@southernstandard.com</li>
+                        <li class="flex items-start"><i data-lucide="map-pin" class="w-4 h-4 mr-2 text-[#f4b73f] mt-1"></i> Serving the Greater Metropolitan Area</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-[#f4b73f]/30 pt-8 text-center text-white/60 text-sm">
+                <p>&copy; 2026 The Southern Standard. All rights reserved. | Professional Lawn Care Services</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

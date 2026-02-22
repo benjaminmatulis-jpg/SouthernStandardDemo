@@ -1,0 +1,241 @@
+/* The Southern Standard - Custom Styles */
+/* Primary Green: #1b9645 */
+/* Accent Gold: #f4b73f */
+
+/* Font Family Configuration */
+.font-serif {
+    font-family: 'Playfair Display', serif;
+}
+
+.font-sans {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1b9645;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #158a3d;
+}
+
+/* Selection Color */
+::selection {
+    background: #f4b73f;
+    color: #1b9645;
+}
+
+/* Focus Visible for Accessibility */
+:focus-visible {
+    outline: 2px solid #f4b73f;
+    outline-offset: 2px;
+}
+
+/* Form Input Focus States */
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #1b9645 !important;
+    box-shadow: 0 0 0 3px rgba(27, 150, 69, 0.1);
+}
+
+/* Transition Utilities */
+.transition-all {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+}
+
+/* Hover Transform */
+.hover\:transform:hover {
+    transform: translateY(-2px);
+}
+
+/* Custom Button Hover Effects */
+.btn-primary {
+    background-color: #f4b73f;
+    color: #1b9645;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #ffffff;
+    color: #1b9645;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Link Hover Underline Effect */
+.nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #f4b73f;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* Card Hover Effects */
+.service-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Testimonial Card Quote Animation */
+.testimonial-card {
+    transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-4px);
+}
+
+/* Mobile Menu Animation */
+#mobile-menu {
+    transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+}
+
+#mobile-menu:not(.hidden) {
+    max-height: 400px;
+    opacity: 1;
+}
+
+/* Hero Gradient Overlay */
+.hero-overlay {
+    background: linear-gradient(to bottom, rgba(27, 150, 69, 0.9), rgba(27, 150, 69, 0.7));
+}
+
+/* Section Divider */
+.section-divider {
+    height: 4px;
+    background: linear-gradient(to right, transparent, #f4b73f, transparent);
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+/* Image Hover Zoom Effect */
+.img-zoom-container {
+    overflow: hidden;
+}
+
+.img-zoom-container img {
+    transition: transform 0.5s ease;
+}
+
+.img-zoom-container:hover img {
+    transform: scale(1.05);
+}
+
+/* Loading State for Form */
+.form-loading {
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+/* Success Animation */
+@keyframes checkmark {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.animate-checkmark {
+    animation: checkmark 0.5s ease-out forwards;
+}
+
+/* Stagger Animation for Grid Items */
+.stagger-item {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Stagger delays */
+.stagger-item:nth-child(1) { animation-delay: 0.1s; }
+.stagger-item:nth-child(2) { animation-delay: 0.2s; }
+.stagger-item:nth-child(3) { animation-delay: 0.3s; }
+.stagger-item:nth-child(4) { animation-delay: 0.4s; }
+.stagger-item:nth-child(5) { animation-delay: 0.5s; }
+.stagger-item:nth-child(6) { animation-delay: 0.6s; }
+
+/* Gold Accent Border */
+.border-gold {
+    border-color: #f4b73f;
+}
+
+/* Green Background with Texture */
+.bg-green-texture {
+    background-color: #1b9645;
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* Responsive Typography Adjustments */
+@media (max-width: 640px) {
+    .font-serif {
+        letter-spacing: -0.01em;
+    }
+}
+
+/* Print Styles */
+@media print {
+    nav, footer, .no-print {
+        display: none !important;
+    }
+    
+    body {
+        font-size: 12pt;
+        line-height: 1.5;
+    }
+    
+    a[href]::after {
+        content: " (" attr(href) ")";
+    }
+}
