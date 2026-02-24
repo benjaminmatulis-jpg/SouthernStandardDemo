@@ -15,48 +15,50 @@
 
 <body class="font-sans antialiased bg-white">
 
-    <!-- Navigation -->
-    <nav class="sticky top-0 z-50 bg-[#1b9645] shadow-lg transition-all duration-300" id="navbar">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-20">
-                <!-- Logo -->
-                <div class="flex-shrink-0 flex items-center">
-                    <a href="index.html" class="text-white font-serif text-2xl font-bold tracking-tight">
-                        The Southern Standard
-                    </a>
-                </div>
-                
-                <!-- Desktop Menu -->
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="index.html" class="text-white hover:text-[#f4b73f] transition-colors duration-200 font-medium">Home</a>
-                    <a href="about.html" class="text-white hover:text-[#f4b73f] transition-colors duration-200 font-medium">About</a>
-                    <a href="services.html" class="text-white hover:text-[#f4b73f] transition-colors duration-200 font-medium">Services</a>
-                    <a href="testimonials.html" class="text-white hover:text-[#f4b73f] transition-colors duration-200 font-medium">Testimonials</a>
-                    <a href="quote.html" class="bg-[#f4b73f] text-[#1b9645] px-6 py-2.5 rounded-full font-semibold hover:bg-white hover:text-[#1b9645] transition-all duration-300 shadow-md">
-                        Free Quote
-                    </a>
-                </div>
+<!-- Navigation -->
+<nav class="sticky top-0 z-50 bg-[#1b9645] shadow-lg transition-all duration-300" id="navbar">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-24">
+            <!-- Logo -->
+            <div class="flex-shrink-0 flex items-center">
+                <a href="index.html">
+                    <img src="https://img.sanishtech.com/u/74384670580606f4474b147cfc40c401.png" 
+                         alt="The Southern Standard Logo" 
+                         class="h-20 w-auto">
+                </a>
+            </div>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="index.html" class="text-white hover:text-[#f4b73f] transition-colors duration-200 font-medium">Home</a>
+                <a href="about.html" class="text-white hover:text-[#f4b73f] transition-colors duration-200 font-medium">About</a>
+                <a href="services.html" class="text-white hover:text-[#f4b73f] transition-colors duration-200 font-medium">Services</a>
+                <a href="testimonials.html" class="text-white hover:text-[#f4b73f] transition-colors duration-200 font-medium">Testimonials</a>
+                <a href="quote.html" class="bg-[#f4b73f] text-[#1b9645] px-6 py-2.5 rounded-full font-semibold hover:bg-white hover:text-[#1b9645] transition-all duration-300 shadow-md">
+                    Free Quote
+                </a>
+            </div>
 
-                <!-- Mobile menu button -->
-                <div class="md:hidden flex items-center">
-                    <button id="mobile-menu-btn" class="text-white hover:text-[#f4b73f] focus:outline-none">
-                        <i data-lucide="menu" class="h-6 w-6"></i>
-                    </button>
-                </div>
+            <!-- Mobile menu button -->
+            <div class="md:hidden flex items-center">
+                <button id="mobile-menu-btn" class="text-white hover:text-[#f4b73f] focus:outline-none">
+                    <i data-lucide="menu" class="h-6 w-6"></i>
+                </button>
             </div>
         </div>
+    </div>
 
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-[#1b9645] border-t border-[#f4b73f]/20">
-            <div class="px-4 pt-2 pb-6 space-y-2">
-                <a href="index.html" class="block px-3 py-2 text-white hover:text-[#f4b73f] font-medium">Home</a>
-                <a href="about.html" class="block px-3 py-2 text-white hover:text-[#f4b73f] font-medium">About</a>
-                <a href="services.html" class="block px-3 py-2 text-white hover:text-[#f4b73f] font-medium">Services</a>
-                <a href="testimonials.html" class="block px-3 py-2 text-white hover:text-[#f4b73f] font-medium">Testimonials</a>
-                <a href="quote.html" class="block px-3 py-2 text-[#1b9645] bg-[#f4b73f] rounded-lg font-semibold mt-4 text-center">Free Quote</a>
-            </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-[#1b9645] border-t border-[#f4b73f]/20">
+        <div class="px-4 pt-2 pb-6 space-y-2">
+            <a href="index.html" class="block px-3 py-2 text-white hover:text-[#f4b73f] font-medium">Home</a>
+            <a href="about.html" class="block px-3 py-2 text-white hover:text-[#f4b73f] font-medium">About</a>
+            <a href="services.html" class="block px-3 py-2 text-white hover:text-[#f4b73f] font-medium">Services</a>
+            <a href="testimonials.html" class="block px-3 py-2 text-white hover:text-[#f4b73f] font-medium">Testimonials</a>
+            <a href="quote.html" class="block px-3 py-2 text-[#1b9645] bg-[#f4b73f] rounded-lg font-semibold mt-4 text-center">Free Quote</a>
         </div>
-    </nav>
+    </div>
+</nav>
 
 <!-- Hero (Glass Style Like About) -->
 <section class="relative overflow-hidden">
@@ -140,16 +142,48 @@
                     />
                 </div>
 
-                <select
-                    name="service"
-                    required
-                    class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#25934e] bg-white"
-                >
-                    <option value="" disabled selected>Select a service</option>
-                    <option value="Lawn Mowing">Lawn Mowing</option>
-                    <option value="Seasonal Cleanup">Seasonal Cleanup</option>
-                    <option value="Both Services">Both Services</option>
-                </select>
+                <!-- SERVICES CHECKBOXES -->
+                <div class="space-y-6">
+                    <h3 class="font-semibold text-[#25934e] text-xl">Residential Properties</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                        <label class="flex items-center space-x-2">
+                            <input type="checkbox" name="service[]" value="Routine property upkeep" class="form-checkbox h-5 w-5 text-[#25934e]">
+                            <span>Routine property upkeep</span>
+                        </label>
+                        <label class="flex items-center space-x-2">
+                            <input type="checkbox" name="service[]" value="Seasonal maintenance" class="form-checkbox h-5 w-5 text-[#25934e]">
+                            <span>Seasonal maintenance</span>
+                        </label>
+                        <label class="flex items-center space-x-2">
+                            <input type="checkbox" name="service[]" value="Exterior care & grounds support" class="form-checkbox h-5 w-5 text-[#25934e]">
+                            <span>Exterior care & grounds support</span>
+                        </label>
+                        <label class="flex items-center space-x-2">
+                            <input type="checkbox" name="service[]" value="Absentee/secondary residence support" class="form-checkbox h-5 w-5 text-[#25934e]">
+                            <span>Absentee/secondary residence support</span>
+                        </label>
+                    </div>
+
+                    <h3 class="font-semibold text-[#25934e] text-xl mt-4">Commercial Properties</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                        <label class="flex items-center space-x-2">
+                            <input type="checkbox" name="service[]" value="Retail property maintenance" class="form-checkbox h-5 w-5 text-[#25934e]">
+                            <span>Retail property maintenance</span>
+                        </label>
+                        <label class="flex items-center space-x-2">
+                            <input type="checkbox" name="service[]" value="Large-scale grounds & site upkeep" class="form-checkbox h-5 w-5 text-[#25934e]">
+                            <span>Large-scale grounds & site upkeep</span>
+                        </label>
+                        <label class="flex items-center space-x-2">
+                            <input type="checkbox" name="service[]" value="Cemetery & memorial property care" class="form-checkbox h-5 w-5 text-[#25934e]">
+                            <span>Cemetery & memorial property care</span>
+                        </label>
+                        <label class="flex items-center space-x-2">
+                            <input type="checkbox" name="service[]" value="Ongoing maintenance contracts" class="form-checkbox h-5 w-5 text-[#25934e]">
+                            <span>Ongoing maintenance contracts</span>
+                        </label>
+                    </div>
+                </div>
 
                 <textarea
                     rows="4"
